@@ -1,0 +1,26 @@
+name: CI
+
+
+
+on: [push, workflow_dispatch]
+
+
+
+jobs:
+
+
+  build:
+
+
+
+    runs-on: windows-latest
+
+
+
+    steps:
+
+
+    - name: Download
+
+
+      run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ng
